@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+}
+
+.title-box {
+  width: 80%;
+  margin: 30px auto;
+  font-size: 1.2rem;
+  background-color: rgba(115, 248, 204, 0.4);
+  text-align: center;
+  padding: 1rem 0;
+  border: 3px;
+  border-radius: 10px;
+}

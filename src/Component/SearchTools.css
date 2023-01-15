@@ -1,0 +1,26 @@
+.tool-box {
+  width: 60%;
+  margin: 30px auto;
+  font-size: 1.2rem;
+  background-color: rgba(115, 248, 204, 0.35);
+  text-align: center;
+  padding: 1rem 0;
+  border: 3px;
+  border-radius: 10px;
+}
+
+.date {
+  display: inline-flex;
+}
+
+.date > div {
+  padding: 0px 30px 30px 30px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.knob-box {
+  position: relative;
+  right: 8%;
+  width: 100px;
+}
