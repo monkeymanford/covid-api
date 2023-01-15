@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "region": "QC",
+      "date": "2022-12-12",
+      "cases": 1257897.0,
+      "cases_daily": 764.0,
+      "deaths": 17445.0,
+      "deaths_daily": 7.0,
+      "hospitalizations": 1999.0,
+      "hospitalizations_daily": 0.0,
+      "icu": 54.0,
+      "icu_daily": 0.0,
+      "tests_completed": 19339333.0,
+      "tests_completed_daily": 0.0,
+      "vaccine_coverage_dose_1": 84.9,
+      "vaccine_coverage_dose_1_daily": 0.0,
+      "vaccine_coverage_dose_2": 82.3,
+      "vaccine_coverage_dose_2_daily": 0.0,
+      "vaccine_coverage_dose_3": 37.0,
+      "vaccine_coverage_dose_3_daily": 0.0,
+      "vaccine_coverage_dose_4": 14.7,
+      "vaccine_coverage_dose_4_daily": 0.0,
+      "vaccine_administration_total_doses": 19041387.0,
+      "vaccine_administration_total_doses_daily": 0.0,
+      "vaccine_administration_dose_1": 7379821.0,
+      "vaccine_administration_dose_1_daily": 0.0,
+      "vaccine_administration_dose_2": 7160015.0,
+      "vaccine_administration_dose_2_daily": 0.0,
+      "vaccine_administration_dose_3": 3220882.0,
+      "vaccine_administration_dose_3_daily": 0.0,
+      "vaccine_administration_dose_4": 1280669.0,
+      "vaccine_administration_dose_4_daily": 0.0
+    }
+  ],
+  "version": "2023-01-14 10:08 EST"
+} 
