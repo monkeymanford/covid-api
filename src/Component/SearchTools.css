@@ -1,7 +1,7 @@
 .tool-box {
   width: 60%;
   margin: 30px auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: rgba(115, 248, 204, 0.35);
   text-align: center;
   padding: 1rem 0;
@@ -11,16 +11,20 @@
 
 .date {
   display: inline-flex;
+  width: 90%;
 }
 
 .date > div {
   padding: 0px 30px 30px 30px;
   text-align: center;
   font-size: 0.8rem;
+  min-width: 150px;
+  margin: auto;
 }
 
 .knob-box {
   position: relative;
   right: 8%;
   width: 100px;
+  margin: auto;
 }
