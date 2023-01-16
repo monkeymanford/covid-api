@@ -1,20 +1,9 @@
-.tool-box {
-  width: 60%;
-  margin: 30px auto;
-  font-size: 1rem;
-  background-color: rgba(115, 248, 204, 0.35);
-  text-align: center;
-  padding: 1rem 0;
-  border: 3px;
-  border-radius: 10px;
-}
-
 .date {
   display: inline-flex;
   width: 90%;
 }
 
-.date > div {
+.date>div {
   padding: 0px 30px 30px 30px;
   text-align: center;
   font-size: 0.8rem;
@@ -27,4 +16,23 @@
   right: 8%;
   width: 100px;
   margin: auto;
+  opacity: 0.8;
+}
+
+.provinces {
+  position: relative;
+  top: -100px;
+  background: url('/assets/Canada2.svg') no-repeat 70%;
+  background-size: 400px;
+  margin-left: 10px;
+  height: 400px;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.button-decoration > button {
+  color: rgb(239, 186, 186);
+  text-shadow: 1px 1px rgb(156, 132, 132);
+  border: none;
+  background: transparent;
 }

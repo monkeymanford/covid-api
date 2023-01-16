@@ -1,0 +1,17 @@
+.box-style {
+  width: 500px;
+  height: 400px;
+  margin: 30px auto;
+  font-size: 1rem;
+  background-color: rgba(115, 248, 204, 0.38);
+  backdrop-filter: blur(3px);
+  text-align: center;
+  padding: 1rem 0;
+  border: 3px;
+  border-radius: 6px;
+}
+
+.text-decoration {
+  color: rgb(239, 186, 186);
+  text-shadow: 1px 1px rgb(106, 90, 90);
+}

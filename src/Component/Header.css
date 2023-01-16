@@ -5,10 +5,13 @@
 .title-box {
   width: 80%;
   margin: 30px auto;
-  font-size: 1.2rem;
-  background-color: rgba(115, 248, 204, 0.4);
+  font-size: 1.125rem;
+  color: rgb(239, 186, 186);
+  text-shadow: 1px 1px rgb(60, 50, 50);
+  background-color: rgba(115, 248, 204, 0.45);
+  backdrop-filter: blur(2px);
   text-align: center;
   padding: 1rem 0;
   border: 3px;
-  border-radius: 10px;
+  border-radius: 6px;
 }

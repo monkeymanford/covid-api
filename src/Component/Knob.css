@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   margin: auto;
+  cursor: pointer;
 }
 .knob .ticks {
   position: absolute;
@@ -19,9 +20,9 @@
 .knob.outer {
   border-radius: 50%;
   border: 1px solid #222;
-  border-bottom: 5px solid #222;
-  background-image: radial-gradient(100% 50%, rgb(87, 148, 155) 6%, #333 190%);
-  box-shadow: 0 5px 15px 2px black, 0 0 5px 3px black, 0 0 0 6px #444;
+  border-bottom: 5px solid rgb(90, 86, 86);
+  background-image: radial-gradient(100% 50%, rgb(173, 178, 175) 6%, rgb(184, 226, 214) 190%);
+  box-shadow: 0 5px 15px 2px black, 0 0 5px 3px rgb(215, 215, 215), 0 0 0 6px rgb(154, 238, 128);
 }
 .knob.inner {
   border-radius: 50%;
@@ -34,7 +35,7 @@
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
-  background: #318e81;
+  background: #ff9696;
   box-shadow: 0 0 3px 1px black;
 }
 

@@ -1,0 +1,70 @@
+.provinces > button {
+  position: absolute;
+  font-size: 26px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.glow {
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.bc {
+  top: 245px;
+  left: 90px;
+}
+
+.al {
+  top: 265px;
+  left: 135px;
+}
+
+.sa {
+  top: 275px;
+  left: 175px;
+}
+
+.ma {
+  top: 280px;
+  left: 210px;
+}
+
+.on {
+  top: 290px;
+  left: 280px;
+}
+
+.qc {
+  top: 290px;
+  left: 330px;
+}
+
+.nb {
+  top: 280px;
+  left: 378px;
+}
+
+.pe {
+  top: 270px;
+  left: 395px;
+}
+
+.ns {
+  top: 290px;
+  left: 395px;
+}
+
+.nf {
+  top: 240px;
+  left: 420px;
+}
