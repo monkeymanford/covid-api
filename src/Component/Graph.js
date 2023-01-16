@@ -28,7 +28,7 @@ const Graph = (props) => {
   const calculateHospitalizations = () => {
     var hospitalizations = 0
     props.data.data && props.data.data.hospitalizations.forEach(total => {
-      hospitalizations += total.value_daily
+      hospitalizations += total.value
     })
     if (hospitalizations < 0) return 0
     return hospitalizations
@@ -42,17 +42,27 @@ const Graph = (props) => {
     return deaths;
   }
 
+  const calculateICUs = () => {
+    var ICUs = 0
+    props.data.data && props.data.data.icu.forEach(total => {
+      ICUs += total.value
+    })
+    return ICUs;
+  }
+
 
   return (
-    <div>
+    <div className='graph'>
       <div className='box-style text-decoration'>
         <h2>{props.data.data && provinces[props.data.data.cases[0].region.toLowerCase()]}</h2>
         <p className='date-range'>Du {props.data.data && props.data.data.cases[0].date} au {props.data.data && props.data.data.cases[(props.data.data.cases.length - 1)].date}</p>
         <div className='resultats'>
           <h3>Nombre de cas : {calculateCases()}</h3>
           <h3>Hospitalisations : {calculateHospitalizations()}</h3>
-          <h3>Décès confirmés: {calculateDeaths()}</h3>
+          <h3>Soins intensifs : {calculateICUs()}</h3>
+          <h3>Décès confirmés : {calculateDeaths()}</h3>
         </div>
+        <p onClick={() => props.retour()} className='retour'>Retour</p>
       </div>
     </div>
   )

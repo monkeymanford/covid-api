@@ -8,8 +8,8 @@ const SearchTools = (props) => {
 
   const months = ['Jan,', 'Feb,', 'Mar,', 'Apr,', 'May,', 'Jun,', 'Jul,', 'Aug,', 'Sep,', 'Oct,', 'Nov,', 'Déc,']
 
-  const [startDate, setStartDate] = useState('');
-  const [endDate, setEndDate] = useState('');
+  const [startDate, setStartDate] = useState('25 Jan, 2020');
+  const [endDate, setEndDate] = useState('1 Jan, 2023');
 
   const getStartValue = (startValue) => {
     calculateStartDate(startValue)
@@ -46,7 +46,7 @@ const SearchTools = (props) => {
   }
 
   return (
-    <div className='box-style text-decoration'>
+    <div className='box-style text-decoration search-tools'>
       <div className='date'>
         <div className='start'>
           <h3>Du {startDate}</h3>

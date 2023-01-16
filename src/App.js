@@ -9,19 +9,21 @@ function App() {
 
   const [data, setData] = useState({})
   const [province, setProvince] = useState('qc')
-  const [startDate, setStartDate] = useState('2020-10-10')
-  const [endDate, setEndDate] = useState('2022-10-10')
+  const [startDate, setStartDate] = useState('2020-1-25')
+  const [endDate, setEndDate] = useState('2023-1-1')
 
-  const url = `https://api.opencovid.ca/timeseries?stat=cases&stat=hospitalizations&stat=deaths&geo=pt&loc=${province}&after=${startDate}&before=${endDate}&fill=false&version=true&pt_names=short&hr_names=hruid&legacy=false&fmt=json`
+  const [view, setView] = useState('tools')
+
+  const url = `https://api.opencovid.ca/timeseries?stat=cases&stat=hospitalizations&stat=deaths&stat=icu&geo=pt&loc=${province}&after=${startDate}&before=${endDate}&fill=false&version=true&pt_names=short&hr_names=hruid&legacy=false&fmt=json`
 
   useEffect(() => {
     rechercher()
-  },[province, startDate, endDate])
+  }, [province, startDate, endDate])
 
   const rechercher = () => {
-    axios.get(url).then((response) => {
-      setData(response.data)
-    })
+    axios.get(url)
+      .then((response) => { setData(response.data) })
+      .catch(console.log("not ready"))
     console.log(data)
   }
 
@@ -29,14 +31,19 @@ function App() {
     setStartDate(start)
     setEndDate(end)
     setProvince(province)
+    setView('graph')
+  }
+
+  const retour = () => {
+    setView('tools')
   }
 
 
   return (
     <div className="app">
       <Header />
-      <SearchTools fetchData={(start, end, province) => fetchData(start, end, province)} />
-      <Graph data={data}/>
+      {view === 'tools' && <SearchTools fetchData={(start, end, province) => fetchData(start, end, province)} />}
+      {view === 'graph' && <Graph data={data} retour={() => retour()}/>}
     </div>
   );
 }

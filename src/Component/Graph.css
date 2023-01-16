@@ -11,3 +11,8 @@ h2 {
 .resultats {
   margin-top: 50px;
 }
+
+.retour {
+  margin-top: 50px;
+  cursor: pointer;
+}
