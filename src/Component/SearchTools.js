@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Knob from './Knob'
 import './SearchTools.css'
 import './Provinces.css'
@@ -8,8 +8,8 @@ const SearchTools = (props) => {
 
   const months = ['Jan,', 'Feb,', 'Mar,', 'Apr,', 'May,', 'Jun,', 'Jul,', 'Aug,', 'Sep,', 'Oct,', 'Nov,', 'Déc,']
 
-  const [startDate, setStartDate] = useState('25 Jan, 2020');
-  const [endDate, setEndDate] = useState('1 Jan, 2023');
+  const [startDate, setStartDate] = useState(props.start);
+  const [endDate, setEndDate] = useState(props.end);
 
   const getStartValue = (startValue) => {
     calculateStartDate(startValue)
@@ -51,13 +51,13 @@ const SearchTools = (props) => {
         <div className='start'>
           <h3>Du {startDate}</h3>
           <div className='knob-box'>
-            <Knob size={55} value={90} min={0} max={1200} onChange={(newValue) => getStartValue(newValue)} />
+            <Knob size={50} value={400} min={0} max={1200} onChange={(newValue) => getStartValue(newValue)} />
           </div>
         </div>
         <div className='end'>
           <h3>Au {endDate}</h3>
           <div className='knob-box'>
-            <Knob size={55} value={90} min={1200} max={0} onChange={(newValue) => getEndValue(newValue)} />
+            <Knob size={50} value={400} min={1200} max={0} onChange={(newValue) => getEndValue(newValue)} />
           </div>
         </div>
       </div>
