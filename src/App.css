@@ -4,3 +4,15 @@
   background: url('/assets/virus-big.jpeg') no-repeat center center/cover;
 }
 
+.fadeout {
+  visibility: visible;
+  opacity: 0;
+  transition: opacity .25s linear;
+}
+
+.fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .25s linear;
+}
+
