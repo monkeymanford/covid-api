@@ -39,8 +39,8 @@ const SearchTools = (props) => {
       startDate.substring(0, startDate.indexOf(' '));
 
     let end = endDate.substring(endDate.length - 4) + '-' +
-    (months.indexOf(endDate.substring(endDate.indexOf(' ') + 1, endDate.indexOf(' ') + 5)) + 1) + '-' +
-    endDate.substring(0, endDate.indexOf(' '));
+      (months.indexOf(endDate.substring(endDate.indexOf(' ') + 1, endDate.indexOf(' ') + 5)) + 1) + '-' +
+      endDate.substring(0, endDate.indexOf(' '));
 
     props.fetchData(start, end, province);
   }

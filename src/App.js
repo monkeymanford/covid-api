@@ -36,6 +36,7 @@ function App() {
     axios.get(url)
       .then((response) => { setData(response.data) })
       .catch(console.log("not ready"))
+      console.log(data)
   }
 
   const fadeToView = async (whichView) => { // implémentaire les fondus
@@ -72,9 +73,9 @@ function App() {
 }
 
   //implémenter le format graphique
-  //ajouter un fade-in et out pour le changement de view
-
   //next time gérer les fade différemment
+  //alerte si les dates sont impossibles
+  //next time séparer les components graph et résultat
 
   return (
     <div className="app">

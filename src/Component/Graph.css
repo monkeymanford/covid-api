@@ -1,6 +1,6 @@
 h2 {
-  font-size: 1.8rem;;
-  margin: 50px 10px 0px 10px;
+  font-size: 1.8rem;
+  margin: 20px 10px 0px 10px;
   padding: 0;
 }
 
@@ -12,7 +12,30 @@ h2 {
   margin-top: 50px;
 }
 
+.back-to-chart {
+  margin-top: 90px;
+}
+
 .retour {
+  position: absolute;
   margin-top: 50px;
   cursor: pointer;
+  font-size: 40px;
+  font-weight: 600;
+  top: -20px;
+  left: 40px;
+}
+
+.chartbox > * {
+  margin: auto;
+  padding: 30px 50px 0 0;
+  margin-bottom: -10px;
+}
+
+.chart-menu {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
 }
