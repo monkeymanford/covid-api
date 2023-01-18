@@ -20,9 +20,9 @@
 .knob.outer {
   border-radius: 50%;
   border: 1px solid #222;
-  border-bottom: 5px solid rgb(90, 86, 86);
-  background-image: radial-gradient(100% 50%, rgb(173, 178, 175) 6%, rgb(184, 226, 214) 190%);
-  box-shadow: 0 5px 15px 2px black, 0 0 5px 3px rgb(215, 215, 215), 0 0 0 6px rgb(154, 238, 128);
+  border-bottom: 1px solid rgb(90, 86, 86);
+  background-image: radial-gradient(50% 50%, rgb(198, 211, 203) 6%, rgb(203, 229, 222) 250%);
+  box-shadow: 0 0px 35px 2px black, 0 0 5px 3px rgb(215, 215, 215), 0 0 0 8px rgb(154, 238, 128);
 }
 .knob.inner {
   border-radius: 50%;

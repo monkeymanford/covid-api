@@ -5,6 +5,13 @@ import SearchTools from './Component/SearchTools';
 import Graph from './Component/Graph';
 import axios from 'axios';
 
+  //next time gérer les fade différemment
+  //alerte si les dates sont impossibles
+  //next time séparer les components graph et résultat
+  //reformater les nombres
+  //ajouter les territoires
+  //changer la typo
+
 function App() {
 
   const months = ['Jan,', 'Feb,', 'Mar,', 'Apr,', 'May,', 'Jun,', 'Jul,', 'Aug,', 'Sep,', 'Oct,', 'Nov,', 'Déc,']
@@ -72,10 +79,6 @@ function App() {
     return new Promise( res => setTimeout(res, delay) );
 }
 
-  //implémenter le format graphique
-  //next time gérer les fade différemment
-  //alerte si les dates sont impossibles
-  //next time séparer les components graph et résultat
 
   return (
     <div className="app">
@@ -84,7 +87,7 @@ function App() {
         {view === 'tools' && // afficher le bon composant selon la vue dans le useState
           <SearchTools start={startDate} end={endDate} fetchData={(start, end, province) => fetchData(start, end, province)} />}
         {view === 'graph' && 
-          <Graph data={data} retour={() => retour()} />}
+          <Graph data={data} retour={() => retour()}/>}
       </div>
     </div>
   );

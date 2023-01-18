@@ -10,10 +10,12 @@ h2 {
 
 .resultats {
   margin-top: 50px;
+  font-size: 18px;
 }
 
 .back-to-chart {
-  margin-top: 90px;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
 .retour {
@@ -21,12 +23,12 @@ h2 {
   margin-top: 50px;
   cursor: pointer;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 400;
   top: -20px;
   left: 40px;
 }
 
-.chartbox > * {
+.chartbox>* {
   margin: auto;
   padding: 30px 50px 0 0;
   margin-bottom: -10px;
@@ -34,8 +36,27 @@ h2 {
 
 .chart-menu {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: auto;
-  text-align: center;
+  width: 75%;
+  justify-content: space-evenly;
+  padding-left: 40px;
+}
+
+.chart-menu>span {
+  cursor: pointer;
+}
+
+.fadeout {
+  visibility: visible;
+  opacity: 0;
+  transition: opacity .25s linear;
+}
+
+.fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .25s linear;
+}
+
+.bold {
+  font-weight: 900;
 }
