@@ -25,27 +25,27 @@
 }
 
 .al {
-  top: 265px;
+  top: 255px;
   left: 135px;
 }
 
 .sa {
-  top: 275px;
+  top: 265px;
   left: 175px;
 }
 
 .ma {
-  top: 280px;
+  top: 270px;
   left: 210px;
 }
 
 .on {
-  top: 290px;
-  left: 280px;
+  top: 280px;
+  left: 270px;
 }
 
 .qc {
-  top: 290px;
+  top: 280px;
   left: 330px;
 }
 
@@ -65,6 +65,21 @@
 }
 
 .nf {
-  top: 240px;
+  top: 235px;
   left: 420px;
+}
+
+.yt {
+  top: 140px;
+  left: 90px;
+}
+
+.nt {
+  top: 170px;
+  left: 160px;
+}
+
+.nu {
+  top: 190px;
+  left: 215px;
 }

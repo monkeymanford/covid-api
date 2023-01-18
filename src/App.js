@@ -8,9 +8,6 @@ import axios from 'axios';
   //next time gérer les fade différemment
   //alerte si les dates sont impossibles
   //next time séparer les components graph et résultat
-  //reformater les nombres
-  //ajouter les territoires
-  //changer la typo
 
 function App() {
 

@@ -62,6 +62,9 @@ const SearchTools = (props) => {
         </div>
       </div>
       <div className='provinces button-decoration'>
+        <button onClick={() => fetchData('nu')} className='nu'>&#9679;</button>
+        <button onClick={() => fetchData('nt')} className='nt'>&#9679;</button>
+        <button onClick={() => fetchData('yt')} className='yt'>&#9679;</button>
         <button onClick={() => fetchData('bc')} className='bc'>&#9679;</button>
         <button onClick={() => fetchData('ab')} className='al'>&#9679;</button>
         <button onClick={() => fetchData('sk')} className='sa'>&#9679;</button>

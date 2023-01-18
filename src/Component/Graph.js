@@ -20,7 +20,10 @@ const Graph = (props) => {
     'nb': 'Nouveau-Brunswick',
     'pe': "Île-Du-Prince-Edouard",
     'ns': 'Nouvelle-Écosse',
-    'nl': 'Terre-Neuve'
+    'nl': 'Terre-Neuve',
+    'yt': 'Yukon',
+    'nt': 'Territoires du Nord-Ouest',
+    'nu': 'Nunavut'
   }
 
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Déc']
