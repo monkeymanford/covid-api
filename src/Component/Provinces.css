@@ -5,6 +5,15 @@
   cursor: pointer;
 }
 
+.MuiTooltip-tooltip {
+  color: rgba(239, 186, 186, 0.9) !important;
+  font-size: 12px !important;
+  font-weight:400 !important;
+  font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+  background-color:rgba(115, 136, 136, 0.8) !important;
+  text-shadow: .5px .5px .5px rgba(0,0,0,0.4), .5px .5px .5px rgba(0,0,0,0.4);
+}
+
 .glow {
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
@@ -51,17 +60,17 @@
 
 .nb {
   top: 280px;
-  left: 378px;
+  left: 375px;
 }
 
 .pe {
-  top: 270px;
+  top: 267px;
   left: 395px;
 }
 
 .ns {
   top: 290px;
-  left: 395px;
+  left: 398px;
 }
 
 .nf {
@@ -83,3 +92,4 @@
   top: 190px;
   left: 215px;
 }
+

@@ -1,3 +1,32 @@
+.error-message {
+  width: 300px;
+  margin: auto;
+  margin-top: 60px;
+  font-size: 18px;
+}
+
+.error2 {
+  width: 200px;
+  font-size: 14px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.error-ok {
+  color: rgb(239, 186, 186);
+  margin-top: 80px;
+  padding: 10px;
+  background-color: rgba(239, 186, 186, 0.2);
+  border-radius: 20px;
+  border-color: rgb(239, 186, 186);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error-ok:hover {
+  background-color: rgba(239, 186, 186, 0.3);
+}
+
 .date {
   display: inline-flex;
   width: 90%;

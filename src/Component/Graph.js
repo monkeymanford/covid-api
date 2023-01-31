@@ -91,7 +91,7 @@ const Graph = (props) => {
     setFades('fadein')
   }
 
-  const setGraphView2 = (view) => {
+  const setGraphViewFunction = (view) => {
     setGraphView(view)
   }
 
@@ -126,9 +126,9 @@ const Graph = (props) => {
             </LineChart>
             }
             <div className='chart-menu'>
-              <span className={graphView === 'cases' && 'bold'} onClick={() => setGraphView2('cases')}> Cas </span>&nbsp;-&nbsp;
-              <span className={graphView === 'icus' && 'bold'} onClick={() => setGraphView2('icus')}> Soins Intensifs </span>&nbsp;-&nbsp;
-              <span className={graphView === 'deaths' && 'bold'} onClick={() => setGraphView2('deaths')}> Décès </span>&nbsp;-&nbsp;
+              <span className={graphView === 'cases' ? 'bold' : undefined} onClick={() => setGraphViewFunction('cases')}> Cas </span>&nbsp;-&nbsp;
+              <span className={graphView === 'icus' ? 'bold' : undefined} onClick={() => setGraphViewFunction('icus')}> Soins Intensifs </span>&nbsp;-&nbsp;
+              <span className={graphView === 'deaths' ? 'bold' : undefined} onClick={() => setGraphViewFunction('deaths')}> Décès </span>&nbsp;-&nbsp;
               <span onClick={() => changeView('numbers')}> Totaux </span>
             </div>
           </div>

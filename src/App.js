@@ -5,9 +5,11 @@ import SearchTools from './Component/SearchTools';
 import Graph from './Component/Graph';
 import axios from 'axios';
 
-  //next time gérer les fade différemment
-  //alerte si les dates sont impossibles
-  //next time séparer les components graph et résultat
+//next time gérer les fade différemment
+//next time séparer les components graph et résultat
+//noms plus significatifs
+//attendre la réponse du API avant de fadein
+//ajouter un message si les knobs ne sont pas initiés.
 
 function App() {
 
@@ -25,8 +27,8 @@ function App() {
   const url = `https://api.opencovid.ca/timeseries?stat=cases&stat=hospitalizations&stat=deaths&stat=icu&geo=pt&loc=${province}&after=${startDate}&before=${endDate}&fill=false&version=true&pt_names=short&hr_names=hruid&legacy=false&fmt=json`
 
   useEffect(() => { // useEffect pour lancer la requête lorsqu'on change de vue
-    view === 'tools' && rechercher()
-  }, [province, startDate, endDate])
+    view === 'tools' && rechercher() // si nous somme dans la vue "tools" lancer 
+  }, [province, startDate, endDate]) // la méthode rechercher pour faire une requete
 
   useEffect(() => { // useEffect d'entrée pour ne pas lancer une rêquete à l'API au premier loading
     const firstSetUp = () => {
@@ -36,14 +38,17 @@ function App() {
     firstLoad && firstSetUp()
   }, [])
 
+  function timeout(delay) { // fonction pour ajouter un delais et attendre les fondus
+    return new Promise(res => setTimeout(res, delay));
+  }
+
   const rechercher = () => { // la requete à l'API
     axios.get(url)
       .then((response) => { setData(response.data) })
       .catch(console.log("not ready"))
-      console.log(data)
   }
 
-  const fadeToView = async (whichView) => { // implémentaire les fondus
+  const fadeToView = async (whichView) => { // implémenter les fondus
     setFades('fadeout')
     await timeout(250)
     setView(whichView)
@@ -52,7 +57,7 @@ function App() {
   }
 
   const formatDate = (date) => { // formater les dates pour les passer aux outils de recherche
-    let year = date.replace( /[^\d].*/, '' )
+    let year = date.replace(/[^\d].*/, '')
     let month = date.replace(year + '-', '')
     month = (month.substring(0, month.indexOf('-')))
     let day = date.replace(year + '-' + month + '-', '')
@@ -72,10 +77,6 @@ function App() {
     fadeToView('tools')
   }
 
-  function timeout(delay) { // fonction pour ajouter un delais et attendre les fondus
-    return new Promise( res => setTimeout(res, delay) );
-}
-
 
   return (
     <div className="app">
@@ -83,8 +84,8 @@ function App() {
       <div className={fades}>
         {view === 'tools' && // afficher le bon composant selon la vue dans le useState
           <SearchTools start={startDate} end={endDate} fetchData={(start, end, province) => fetchData(start, end, province)} />}
-        {view === 'graph' && 
-          <Graph data={data} retour={() => retour()}/>}
+        {view === 'graph' &&
+          <Graph data={data} retour={() => retour()} />}
       </div>
     </div>
   );
